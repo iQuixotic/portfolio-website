@@ -1,2 +1,2 @@
-# My-Very-Own-Website
-My first personal website.
+# Angular Website
+- This website is my very first Angular project site
