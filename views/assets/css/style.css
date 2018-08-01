@@ -1,3 +1,30 @@
 html {
-    font-size: 30px;
+    font-size: 10px;
+    background-color: rgb(83, 82, 82);
+}
+/* 
+.Nav-color {
+    background: rgb(43, 172, 4);
+} */
+
+.Nav-marg-right {
+    margin-right: 7rem;
+}
+
+.Nav-marg-left{
+    margin-left: 10rem;
+}
+
+.Nav-nav_element {
+    font-size: 2rem;
+    color: white;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+.img {
+    width: 590px;
 }
