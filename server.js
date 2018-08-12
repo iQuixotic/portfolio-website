@@ -1,15 +1,14 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4000;
 const app = express();
-
-const expressValidator = require('express-validator');
-const expressSession = require('express-sessions')
+const routes = require('./routes/app')
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(routes);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
@@ -17,12 +16,13 @@ app.use(bodyParser.json());
 
 // Define API routes here
 
-// Send every other request to the React app
-// Define any API routes before this runs
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// document.addEventListener(onstorage) {
+//   window.location.reload(true);
+// }
+
+  app.use(express.static(path.join(__dirname, 'views')));
+// });
 
 app.listen(PORT, () => {
-  console.log(`🌎 ==> Server now on port ${PORT}!`);
+  console.log(`Server listening on port ${PORT}`);
 });
