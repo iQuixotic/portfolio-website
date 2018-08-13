@@ -31,7 +31,7 @@ console.log('hey beautiful')
     `The goal of this game is to click each of the 12 cards once.`, `This is a mobile-responsive random number 
     game made using javascript and jQuery.`]
   }
-        
+         
   let title = document.getElementById('proj-title');
   let carouselItem = document.getElementById('carousel-item');
   let description = document.getElementById('proj-description');
