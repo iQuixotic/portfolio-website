@@ -1,0 +1,76 @@
+
+.Nav_color {
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+} 
+
+.Nav_marg-left{
+    margin-left: 10rem;
+} 
+
+.Nav_marg-right{
+    margin-right: 6rem;
+} 
+
+.Nav_nav-element {
+    position: relative;
+    right: 10%;
+    font-size: 2rem;
+    color: white;
+}
+
+.Nav_fa-icon {
+    display: none;
+    overflow: hidden;
+}
+
+#Nav-mobile {
+    float: right;
+    width: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .Nav_marg-right{
+        margin-right: 3rem;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .Nav_nav-element {
+        display: none;
+    }
+    
+    .Nav_fa-icon {
+        display: block;
+        padding-top: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    #Nav-img {
+        filter: brightness(10);
+        color: rgb(255, 255, 255);        
+        width: 40px;
+        height: 40px;
+    }
+
+    #Nav-mobile {
+        width:100%;
+        justify-content: space-around;
+        display: flex;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    
+    .brand-logo {
+        display: none !important;
+    }
+
+}

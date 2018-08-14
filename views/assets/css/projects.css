@@ -1,0 +1,80 @@
+.carousel {
+    height: 350px;
+}
+#mobile-app {
+    display: none;
+}
+
+#under-fixed-nav {
+    margin-top: 90px;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+}
+
+#Portfolio-full img {
+    margin: 20px 0;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#Portfolio-carousel {
+    text-align: center;
+    overflow: visible;
+}
+
+#Portfolio-carousel img {
+    position: relative;
+    bottom: 32%;
+    right: 53%;
+    width: 40rem;
+    height:33rem;
+}
+
+#proj-title {
+    font-weight: 500;
+}
+
+#proj-title-full-size {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+#proj-description-full-size {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 500;
+    margin: 30px 40px;
+    padding: 14px 30px;
+    font-size: 1.9rem;
+    background-color: rgb(25, 201, 63);
+    color: rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #mobile-app {
+        display: block;
+    }
+
+    #full-size-app { 
+        display: none;
+    }
+
+    #Portfolio-carousel {
+        display: none;
+    }
+
+@media only screen and (max-width: 450px) {
+   
+    #under-fixed-nav {
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+}
+    
+}
