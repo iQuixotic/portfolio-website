@@ -1,21 +1,12 @@
-console.log('hey beautiful')
 
-  $(document).ready(function(){
-    $('.carousel').carousel({
-        shift: 30,
-        
-    });
-  });
-
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true
-  });
+  
 
   const project = {
+    carouselHref: [1, 2, 3],
     title: ['Zenith Holdings', 'Avatar Cards', 'Cat Clicker'],
-    img: ['../imgs/zenithScreenShot.png', '../imgs/cards.png', 
-    '.../imgs/catGif9.png'],
-    href: ['https://bank-manager-app-9485.herokuapp.com/',
+    imgLoc: [`./assets/imgs/zenithScreenShot.png`, './assets/imgs/cards.png', 
+    './assets/imgs/catGif9.png'],
+    projectHref: ['https://bank-manager-app-9485.herokuapp.com/',
     'https://avatar-card-tribute-game-89458.herokuapp.com/', 
     'https://iquixotic.github.io/cat-clicker-game/'],
     description: [`From the main page (accounts), you can see all of the accounts 
@@ -32,6 +23,61 @@ console.log('hey beautiful')
     game made using javascript and jQuery.`]
   }
          
-  let title = document.getElementById('proj-title');
-  let carouselItem = document.getElementById('carousel-item');
-  let description = document.getElementById('proj-description');
+  // let title = document.getElementById('proj-title');
+  // let carImg = document.getElementById('proj-title');
+  // let description = document.getElementById('proj-description');
+
+  console.log('hey beautiful')
+
+  $(document).ready(() => {
+   
+    
+    editDivs = (arg) => {
+      console.log(parseInt(arg))
+    }
+    
+    
+    
+    for(let i=0; i<project.carouselHref.length; i++) {
+
+      let title = document.createElement('div');
+      $('.mobile-app').append(title);
+      $(title).attr('id', 'proj-title');
+      $(title).append(`<h3>${project.title[i]}</h3>`);
+
+      let portfolioCarousel = document.createElement('div');
+      $('.mobile-app').append(portfolioCarousel);
+      $(portfolioCarousel).attr('id', 'Portfolio-carousel');
+      $(portfolioCarousel).attr('class', 'carousel');
+      $(portfolioCarousel).append(`
+      <a class='carousel-item' href='${project.projectHref[i]}'>
+      <img src='${project.imgLoc[i]}'/></a>`);
+
+      let portfolioFull = document.createElement('div');
+      $('.mobile-app').append(portfolioFull);
+      $(portfolioFull).attr('id', 'Portfolio-full');
+      $(portfolioFull).append(`
+      <a class='carousel-item' href='${project.projectHref[i]}'>
+      <img src='${project.imgLoc[i]}'/></a>`);
+
+    }
+
+    
+
+    $('.carousel').carousel({
+      shift: 30,
+  });
+
+})
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+
+     $( document ).ready(() => {
+        $(".carousel").carousel({onCycleTo: (slide) => { editDivs(slide.target); }});
+      });
+  // $("#favs").append(`<div class='container'><div class='col-md-9'><div class='card'><div class='card-body'>
+  // <h3 class='card-title'>${favDATA[1][i].title}</h3><p class='card-text'>
+  // ${favDATA[1][i].summary}</p></div></div>   <div id='comments-here${favDATA[1][i]._id}'></div>`)
+  // i++;
+  

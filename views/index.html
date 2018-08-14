@@ -17,13 +17,12 @@
 <body>
 
     
-  <nav>
-    <div class="nav-wrapper Nav-color">
+  <nav class="Nav-color">
+    <div class="nav-wrapper">
       <a href='/' class="brand-logo left Nav-marg-left">Logo</a>
       <ul class="right Nav-marg-right">
         <li><a class='Nav-nav_element' href="/">Skills</a></li>
         <li><a class='Nav-nav_element' href="/">Portfolio</a></li>
-        <!-- <li><a class='Nav-nav_element' href="/">Contact</a></li> -->
       </ul>
       <ul id="nav-mobile">
         <li><a class='Nav_fa-icon' href="/"><i class="fab fa-linkedin fa-3x"></i></a></li>
@@ -33,16 +32,24 @@
     </div>
   </nav>
 
+  <div class="under-nav">
+    <div class="mobile-app"></div>
+    <div class="full-size-app">
       <div id="proj-title"></div>
+        <div id='Portfolio-carousel' class="carousel">
+           <a class="carousel-item" target='1' href="https://avatar-card-tribute-game-89458.herokuapp.com/"><img src="./assets/imgs/cards.png"></a>
+           <a class="carousel-item" target='2'href="https://iquixotic.github.io/cat-clicker-game/"><img src="./assets/imgs/catGif9.png"></a> 
+           <a class="carousel-item" target='3' href="https://bank-manager-app-9485.herokuapp.com/"><img src="./assets/imgs/zenithScreenShot.png"></a> 
+         </div>
+        <div id="proj-description"></div>
+    </div>
+    
 
-
-      <div id='Portfolio-carousel' class="carousel">
-            <a class="carousel-item"></a>
-            <!-- <a class="carousel-item" href="#two!"><img src="./assets/imgs/images.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="./assets/imgs/images.jpg"></a> -->
-      </div>
-
-      <div id="proj-description"></div>
+        
+  <!-- <div id='Portfolio-carousel' class="carousel"></div>
+    <div id='Portfolio-full'></div>
+  </div> -->
+      
  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- link to jQuery library -->
