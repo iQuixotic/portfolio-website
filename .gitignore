@@ -5,3 +5,5 @@ devStuff.md
 test.md
 
 node_modules
+
+# git rm -r --cached .
