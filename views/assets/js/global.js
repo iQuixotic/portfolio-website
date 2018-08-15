@@ -39,4 +39,4 @@ const c = `<span class='commas'>,</span>`
 const skills = `HTML${c} CSS${c} Javascript${c} Git${c} Github${c}
 API's${c} AJAX${c} Materialize${c} Bootstrap${c} JQuery${c}
 React.js${c} Typescript${c} Node.js${c} MongoDB${c} MySQL${c}
-Sequelize${c} Mongoose${c} and many more...`
+Sequelize${c} Mongoose${c} Heroku${c} Amazon Web Services${c} and many more...`
