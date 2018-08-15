@@ -1,4 +1,5 @@
 html { 
+    font-family: 'Oswald', sans-serif;
     font-size: 10px;
 }
 
@@ -8,6 +9,20 @@ body {
 
 h3 {
     font-size: 5rem;
+}
+
+span {
+    font-size: 1.3rem;
+}
+
+.flex {
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
 }
 
 .card {

@@ -1,6 +1,7 @@
 .carousel {
     height: 350px;
 }
+
 #mobile-app {
     display: none;
 }
@@ -8,10 +9,9 @@
 #under-fixed-nav {
     margin-top: 90px;
     position: relative;
-    left: 15%;
+    left: 5%;
     text-align: center;
-    width: 70%;
-    height: 70%;
+    width: 90%;
 }
 
 #Portfolio-full img {
@@ -29,7 +29,7 @@
 #Portfolio-carousel img {
     position: relative;
     bottom: 32%;
-    right: 53%;
+    right: 50%;
     width: 40rem;
     height:33rem;
 }
@@ -39,6 +39,9 @@
 }
 
 #proj-title-full-size {
+    position: relative;
+    left: 5px;
+    margin: 20px 0;
     font-size: 4.5rem;
     font-weight: 500;
 }
