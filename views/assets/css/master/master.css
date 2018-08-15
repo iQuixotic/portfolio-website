@@ -28,6 +28,12 @@ span {
 .card {
     text-align: justify;
     border-radius: 9px;
+    padding: 14px 30px;
+}
+
+.commas {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,4 +42,8 @@ span {
         font-size: 6px;
     }
     
+    .commas {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 3rem;
+    }
 } 

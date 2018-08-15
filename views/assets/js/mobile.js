@@ -1,5 +1,9 @@
 $(document).ready(() => {
 
+           
+      $('#mobile-app').append(`<div class='about card'><p>${about}</p></div>`);
+      $('#mobile-app').append(`<div class='skills card'><p>${skills}</p></div>`);
+      $('#mobile-app').append(`<div class='spacer'></div>`); 
     
         for (i = 0; i < project.carouselHref.length; i++) {
 

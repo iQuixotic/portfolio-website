@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+
 // for reuse between mobile and full size screens
 const indent = `\u00A0\u00A0\u00A0`
 let i;
@@ -27,3 +31,12 @@ const project = {
     of the page is assigned a number (randomly generated) and  the player is given a target (randomly generated). By clicking
     the pictures, the value held will increase. The goal is to get to the target number without going over.</p>`]
 }
+
+const about = `Hello and welcome to my page !! I am Trey !! `;
+
+const c = `<span class='commas'>,</span>`
+
+const skills = `HTML${c} CSS${c} Javascript${c} Git${c} Github${c}
+API's${c} AJAX${c} Materialize${c} Bootstrap${c} JQuery${c}
+React.js${c} Typescript${c} Node.js${c} MongoDB${c} MySQL${c}
+Sequelize${c} Mongoose${c} and many more...`

@@ -1,0 +1,60 @@
+.skills, .about {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.5rem;
+    left: 3%;
+    width: 94%;
+    border-radius: 5px;
+    height: 40%;
+    margin-top: 40px;
+}
+
+.skills {
+    margin-bottom: 11rem;
+    background-color: aquamarine;
+}
+
+.about {
+    background-color: rgb(136, 127, 255);
+}
+
+.header, .crd-header {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.crd-header {
+    position: absolute;
+    bottom: 75%;
+    right: 5%;
+    font-size: 3rem;
+}
+
+.spacer {
+    margin-top: 10%;
+}
+
+#Skills_skills, #Skills_about {
+    position: relative;
+    top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        margin-top: 100px;
+    }
+
+    .crd-header {
+        font-size: 4rem;
+        bottom: 82%;
+        right: 5%;
+    }
+
+    .skills, .about {
+        font-size: 2.5rem;
+    }
+
+    .spacer {
+        margin-top: 15%;
+    }
+}

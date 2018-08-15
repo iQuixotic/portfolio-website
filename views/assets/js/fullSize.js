@@ -6,6 +6,11 @@ const descFull = $('#proj-description-full-size')
 
 $(document).ready(() => {
 
+    $('.container').css('height', window.innerHeight);
+    
+    $('#Skills_about').html(about);
+    $('#Skills_skills').html(skills);
+
     editDivs = (arg) => {
         const slideNum = parseInt(arg) - 1;
         const titleFull = $('#proj-title-full-size')

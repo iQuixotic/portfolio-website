@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Warrick</title>
+  <title>Warrick Web Development</title>
+  <link rel="icon" type='image/png' href="./assets/imgs/reduxi.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script type="text/javascript" src="http://livejs.com/live.js"></script>
@@ -13,52 +14,32 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/master/normalize.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Oswald|M+PLUS+1p" rel="stylesheet">
 
   <!-- user imported styles -->
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/master/master.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/skills.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/navbar.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/projects.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/contact.css" />
-
-
 </head>
 
 <body onresize="screenSizeUpdateHack(window.innerWidth)">
 
   <!-- navbar section -->
   <nav class="Nav_color">
-    <div class="nav-wrapper">
-      <a href='/' class="brand-logo left Nav_marg-left"><img class='logo' src="assets/imgs/logo.png"/></a>
+    <div class="nav-wrapper"><a href='/' class="brand-logo left Nav_marg-left"><img class='logo' src="assets/imgs/logo.png"/></a>
       <ul class="right Nav_marg-right">
-        <li>
-          <a class='Nav_nav-element' href="skills.html">Skills</a>
-        </li>
-        <li>
-          <a class='Nav_nav-element' href="index.html">Portfolio</a>
-        </li>
+        <li><a class='Nav_nav-element' href="skills.html">Skills</a></li>
+        <li><a class='Nav_nav-element' href="index.html">Portfolio</a></li>
       </ul>
       <ul id="Nav-mobile">
-        <li>
-          <a class='Nav_fa-icon' href="/">
-            <i class="fab fa-linkedin fa-4x"></i>
-          </a>
-        </li>
-        <li>
-          <a class='Nav_fa-icon' href="/">
-            <i class="fab fa-github-square fa-4x"></i>
-          </a>
-        </li>
-        <li>
-          <a class='Nav_fa-icon' href="/">
-            <img id='Nav-img' src='./assets/imgs/heroku-logo-light.png'>
-          </a>
-        </li>
+        <li><a class='Nav_fa-icon' href="/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+        <li><a class='Nav_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-4x"></i></a></li>
+        <li><a class='Nav_fa-icon' href="https://dashboard.heroku.com/"><img id='Nav-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
       </ul>
     </div>
   </nav>
-
-  
 
   <!-- project portfolio section -->
   <div id="under-fixed-nav">
@@ -80,22 +61,30 @@
     </div>
     </div>
 
-
-
     <!-- footer -->
     <div class='footer'>
       <ul class="Foot-ul-left">
         <li><a class='Foot_fa-icon' href="/"><i class="far fa-file-alt fa-5x"></i><span id='Foot-resume' class="flex">Resume</span></a></li>
-        <li><a class='Foot_fa-icon' href="/"><i class="far fa-envelope-open fa-5x"></i><span id='Foot-contact' class="flex">Contact</span></a></li>
+        <li><a class='Foot_fa-icon modal-trigger' href="#contact-modal"><i class="far fa-envelope-open fa-5x"></i><span id='Foot-contact' class="flex">Contact</span></a></li>
       </ul>
 
       <ul class="Foot-ul-right">
         <li><a class='Foot_fa-icon' href="/"><i class="fab fa-linkedin fa-3x"></i></a></li>
-        <li><a class='Foot_fa-icon' href="/"><i class="fab fa-github-square fa-3x"></i></a></li>
-        <li><a class='Foot_fa-icon' href="/"><img id='Foot-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
+        <li><a class='Foot_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-3x"></i></a></li>
+        <li><a class='Foot_fa-icon' href="https://dashboard.heroku.com/"><img id='Foot-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
       </ul>
-
     </div>
+
+  <!-- Modal Structure -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- link to jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
