@@ -8,9 +8,7 @@ screenSizeUpdateHack = (arg) => {
     if(originalWidth < 600 && prevWidth < 600 && arg > 600) {
         location.reload();
         prevWidth = arg;
-    } 
-    // else if(prevWidth > 600 && arg < 600) {
-    else {
+    } else {
         prevWidth = arg;
     }
 }

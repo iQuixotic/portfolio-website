@@ -1,6 +1,3 @@
-
-console.log('hey from fullsize')
-
 const titleFull = $('#proj-title-full-size')
 const descFull = $('#proj-description-full-size')
 
@@ -11,6 +8,7 @@ $(document).ready(() => {
     $('#Skills_about').html(about);
     $('#Skills_skills').html(skills);
 
+    // changes the content of title and description based on image shown in carousel
     editDivs = (arg) => {
         const slideNum = parseInt(arg) - 1;
         const titleFull = $('#proj-title-full-size')

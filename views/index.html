@@ -31,10 +31,10 @@
     <div class="nav-wrapper"><a href='/' class="brand-logo left Nav_marg-left"><img class='logo' src="assets/imgs/logo.png"/></a>
       <ul class="right Nav_marg-right">
         <li><a class='Nav_nav-element' href="skills.html">Skills</a></li>
-        <li><a class='Nav_nav-element' href="index.html">Portfolio</a></li>
+        <li><a class='Nav_nav-element' href="/">Portfolio</a></li>
       </ul>
       <ul id="Nav-mobile">
-        <li><a class='Nav_fa-icon' href="/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+        <li><a class='Nav_fa-icon' href="www.linkedin.com/in/trey-warrick-928547169"><i class="fab fa-linkedin fa-4x"></i></a></li>
         <li><a class='Nav_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-4x"></i></a></li>
         <li><a class='Nav_fa-icon' href="https://dashboard.heroku.com/"><img id='Nav-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
       </ul>
@@ -64,25 +64,36 @@
     <!-- footer -->
     <div class='footer'>
       <ul class="Foot-ul-left">
-        <li><a class='Foot_fa-icon' href="/"><i class="far fa-file-alt fa-5x"></i><span id='Foot-resume' class="flex">Resume</span></a></li>
+        <li><a class='Foot_fa-icon' href="https://docs.google.com/document/d/1Rdn_Fjy_iVgVykVBH0CtJOY_bPfmtm2lRJ0RkaCMQks/edit?usp=sharing"><i class="far fa-file-alt fa-5x"></i><span id='Foot-resume' class="flex">Resume</span></a></li>
         <li><a class='Foot_fa-icon modal-trigger' href="#contact-modal"><i class="far fa-envelope-open fa-5x"></i><span id='Foot-contact' class="flex">Contact</span></a></li>
       </ul>
 
       <ul class="Foot-ul-right">
-        <li><a class='Foot_fa-icon' href="/"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li><a class='Foot_fa-icon' href="https://www.linkedin.com/in/trey-warrick-928547169"><i class="fab fa-linkedin fa-3x"></i></a></li>
         <li><a class='Foot_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-3x"></i></a></li>
         <li><a class='Foot_fa-icon' href="https://dashboard.heroku.com/"><img id='Foot-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
       </ul>
     </div>
 
-  <!-- Modal Structure -->
+  <!-- Contact Modal Structure -->
   <div id="contact-modal" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
+      <h3 class="modal-header">Contact</h3>
+      <div id="Modal_contact-phone" class="col s12"><span class="contact-header">Phone: <br/><br/></span><span class="contact-info">(222) 222-2222</span></div>
+      <div id="Modal_contact-linkedin" class="col s12"><span class="contact-header">Linkedin Profile: <br/><br/></span><a href='https://www.linkedin.com/in/trey-warrick-928547169' class="contact-info">My Profile</a></div>
+      <div id="Modal_contact-email" class="col s12"><span class="contact-header">Email: <br/><br/></span><span class="contact-info">treyw1850@gmail.com</span></div>
+      </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="fin btn modal-close waves-effect waves-green btn-flat">Got it !!</a>
+        <div class="row">
+            <div class="col s12">              
+              <ul class="tabs">
+                <li class="tab col s4"><a href="#Modal_contact-phone">Phone</a></li>
+                <li class="tab col s4"><a class="active" href="#Modal_contact-linkedin">Linked-in</a></li>
+                <li class="tab col s4"><a href="#Modal_contact-email">E-mail</a></li>
+              </ul>
+            </div>
+          </div>        
     </div>
   </div>
 
