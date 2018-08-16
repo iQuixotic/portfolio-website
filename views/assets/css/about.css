@@ -1,60 +1,66 @@
-.skills, .about {
+.About_skills, .About_about {
     font-family: 'Do Hyeon', sans-serif;
     font-size: 1.5rem;
     left: 3%;
     width: 94%;
     border-radius: 5px;
-    height: 40%;
     margin-top: 40px;
 }
 
-.skills {
+.About_skills {
     margin-bottom: 11rem;
     background-color: aquamarine;
 }
 
-.about {
+.About_about {
     background-color: rgb(136, 127, 255);
 }
 
-.header, .crd-header {
+.About_header, .About_crd-header {
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
-.crd-header {
-    position: absolute;
-    bottom: 75%;
-    right: 5%;
+.About_crd-header {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0 0 0 88%;
     font-size: 3rem;
 }
 
-.spacer {
-    margin-top: 10%;
-}
-
-#Skills_skills, #Skills_about {
+#skills-js, #about-js {
     position: relative;
-    top: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
 
-    .header {
+    .About_skills, .About_about {
+        padding: 4rem;
+    }
+
+    .About_header {
         margin-top: 100px;
     }
 
-    .crd-header {
+    .About_crd-header {
         font-size: 4rem;
         bottom: 82%;
         right: 5%;
     }
 
-    .skills, .about {
+    .About_skills, .About_about {
         font-size: 2.5rem;
     }
+}
 
-    .spacer {
-        margin-top: 15%;
+@media only screen and (max-width: 400px) {
+
+    .About_crd-header {
+        margin: 0 0 0 84%;
+    }
+    
+    .About_skills, .About_about {
+        padding: 2rem;
     }
 }

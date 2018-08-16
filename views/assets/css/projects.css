@@ -1,24 +1,95 @@
-.carousel {
-    height: 350px;
-}
+/* spacing directly under nav */
 
-#mobile-app {
-    display: none;
-}
-
-#under-fixed-nav {
-    margin-top: 90px;
-    position: relative;
-    left: 5%;
+#Carousel-js {
     text-align: center;
-    width: 90%;
+    overflow: visible;
 }
 
-#Portfolio-full img {
+#Carousel-js img {
+    position: relative;
+    bottom: 32%;
+    right: 50%;
+    width: 40rem;
+    height:33rem;
+}
+
+/* display on full size */
+
+#Proj_container-fs img {
     margin: 20px 0;
     padding: 20px 10px;
     width: 100%;
     height: 100%;
+}
+
+#Proj_title-fs {
+    position: relative;
+    left: 5px;
+    margin: 20px 0;
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+#Proj_desc-fs {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 500;
+    margin: 30px 40px;
+    font-size: 1.9rem;
+    background-color: rgb(25, 201, 63);
+    color: rgb(0, 0, 0);
+}
+
+/* mobile adjustments */
+
+#Proj_title-mobile {
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #mobile-app {
+        display: block;
+    }
+
+    #full-size-app { 
+        display: none;
+    }
+
+    #Carousel-js {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+   
+    #under-fixed-nav {
+        left: 5%;
+        width: 90%;
+    }
+}
+    
+
+
+
+
+
+
+
+/*
+
+#under-fixed-nav {
+    margin-top: 90px;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+}
+
+/* carousel ---------------------------------------------------------------------------------
+
+.carousel {
+    height: 350px;
 }
 
 #Portfolio-carousel {
@@ -34,8 +105,13 @@
     height:33rem;
 }
 
-#proj-title {
-    font-weight: 500;
+/* display on full size ------------------------------------------
+
+#Portfolio-full img {
+    margin: 20px 0;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
 }
 
 #proj-title-full-size {
@@ -55,6 +131,17 @@
     color: rgb(0, 0, 0);
 }
 
+/* mobile adjustments -----------------------------------
+
+#mobile-app {
+    display: none;
+}
+
+#proj-title {
+    font-weight: 500;
+}
+
+
 @media only screen and (max-width: 600px) {
 
     #mobile-app {
@@ -68,14 +155,13 @@
     #Portfolio-carousel {
         display: none;
     }
+}
 
 @media only screen and (max-width: 450px) {
    
     #under-fixed-nav {
-        left: 10%;
-        width: 80%;
-        height: 80%;
+        left: 5%;
+        width: 90%;
     }
 }
-    
-}
+     */

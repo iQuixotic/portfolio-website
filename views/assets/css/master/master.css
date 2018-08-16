@@ -15,9 +15,19 @@ span {
     font-size: 1.3rem;
 }
 
+
+.carousel {
+    height: 350px;
+}
+
 .flex {
     position: relative;
     display: flex;
+}
+
+.containment {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .logo {
@@ -36,14 +46,54 @@ span {
     font-size: 2.5rem;
 }
 
+.modal {
+    height: 350px;
+    color: black;
+}
+
+.modal-footer {
+    position: absolute;
+    top: 65%;
+}
+
+.spacer {
+    margin-top: 10%;
+}
+
+#under-fixed-nav {
+    margin-top: 90px;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+} 
+
+#mobile-app {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
     html {
         font-size: 6px;
+    }
+
+    .modal-header {
+        font-size: 3.5rem;
     }
     
     .commas {
         font-family: 'M PLUS 1p', sans-serif;
         font-size: 3rem;
     }
+
+    .containment {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .spacer {
+        margin-top: 15%;
+    }
+    
 } 

@@ -18,10 +18,12 @@
 
   <!-- user imported styles -->
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/master/master.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/master/MQ.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/navbar.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/projects.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/contact.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/skills.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/about.css" />
+
 
 </head>
 
@@ -29,58 +31,45 @@
 
   <!-- navbar section -->
   <nav class="Nav_color">
-    <div class="nav-wrapper"><a href='/' class="brand-logo left Nav_marg-left"><img class='logo' src="assets/imgs/logo.png"/></a>
+    <div class="nav-wrapper"><a href='/' class="Nav_brand-logo left Nav_marg-left"><img class='logo' src="assets/imgs/logo.png"/></a>
       <ul class="right Nav_marg-right">
-        <li><a class='Nav_nav-element' href="skills.html">Skills</a></li>
+        <li><a class='Nav_nav-element' href="about.html">Skills</a></li>
         <li><a class='Nav_nav-element' href="/">Portfolio</a></li>
       </ul>
-      <ul id="Nav-mobile">
+      <ul id="Nav_mobile">
         <li><a class='Nav_fa-icon' href="https://www.linkedin.com/in/trey-warrick-928547169"><i class="fab fa-linkedin fa-4x"></i></a></li>
         <li><a class='Nav_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-4x"></i></a></li>
-        <li><a class='Nav_fa-icon' href="https://dashboard.heroku.com/"><img id='Nav-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
+        <li><a class='Nav_fa-icon' href="https://dashboard.heroku.com/"><img id='Nav_img' src='./assets/imgs/heroku-logo-light.png'></a></li>
       </ul>
     </div>
   </nav>
 
   <!-- about   -->
-  <div class="container">
+  <div class="containment">
       <div class="spacer"></div>
-      <h3 class="header">Hello and Welcome !! I am Trey !!</h3>
-      <div class="card about">
-      <h3 class="crd-header">About</h3>
-        <p id="Skills_about"></p>
+      <h3 class="About_header">Hello and Welcome !! I am Trey !!</h3>
+      <div class="card About_about">
+        <h3 class="About_crd-header">About</h3>
+        <p id="about-js"></p>
       </div>
     
       <!-- skills   -->
-      <div class="card skills">
-        <h3 class="crd-header">Skills</h3>
-          <p id="Skills_skills"></p>
+      <div class="card About_skills">
+        <h3 class="About_crd-header">Skills</h3>
+          <p id="skills-js"></p>
       </div>
-    </div>
+  </div>
 
-    <!-- footer -->
-    <div class='footer'>
-      <ul class="Foot-ul-left">
-        <li><a class='Foot_fa-icon' href="https://docs.google.com/document/d/1Rdn_Fjy_iVgVykVBH0CtJOY_bPfmtm2lRJ0RkaCMQks/edit?usp=sharing"><i class="far fa-file-alt fa-5x"></i><span id='Foot-resume' class="flex">Resume</span></a></li>
-        <li><a class='Foot_fa-icon modal-trigger' href="#contact-modal"><i class="far fa-envelope-open fa-5x"></i><span id='Foot-contact' class="flex">Contact</span></a></li>
-      </ul>
-
-      <ul class="Foot-ul-right">
-        <li><a class='Foot_fa-icon' href="https://www.linkedin.com/in/trey-warrick-928547169"><i class="fab fa-linkedin fa-3x"></i></a></li>
-        <li><a class='Foot_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-3x"></i></a></li>
-        <li><a class='Foot_fa-icon' href="https://dashboard.heroku.com/"><img id='Foot-img' src='./assets/imgs/heroku-logo-light.png'></a></li>
-      </ul>
-
-  <!-- Contact Modal Structure -->
-  <div id="contact-modal" class="modal">
+    <!-- Contact Modal Structure -->
+  <div id="Modal_contact-modal" class="modal">
       <div class="modal-content">
         <h3 class="modal-header">Contact</h3>
-        <div id="Modal_contact-phone" class="col s12"><span class="contact-header">Phone: <br/><br/></span><span class="contact-info">(222) 222-2222</span></div>
-        <div id="Modal_contact-linkedin" class="col s12"><span class="contact-header">Linkedin Profile: <br/><br/></span><a href='https://www.linkedin.com/in/trey-warrick-928547169' class="contact-info">My Profile</a></div>
-        <div id="Modal_contact-email" class="col s12"><span class="contact-header">Email: <br/><br/></span><span class="contact-info">treyw1850@gmail.com</span></div>
+        <div id="Modal_contact-phone" class="col s12"><span class="Modal_contact-header">Phone: <br/><br/></span><span class="Modal_contact-info">(222) 222-2222</span></div>
+        <div id="Modal_contact-linkedin" class="col s12"><span class="Modal_contact-header">Linkedin Profile: <br/><br/></span><a href='https://www.linkedin.com/in/trey-warrick-928547169' class="Modal_contact-info">My Linkedin Profile</a></div>
+        <div id="Modal_contact-email" class="col s12"><span class="Modal_contact-header">Email: <br/><br/></span><span class="Modal_contact-info">treyw1850@gmail.com</span></div>
         </div>
       <div class="modal-footer">
-          <a href="#!" class="fin btn modal-close waves-effect waves-green btn-flat">Got it !!</a>
+          <a href="#!" class="Modal_fin btn modal-close waves-effect waves-green btn-flat">Got it !!</a>
           <div class="row">
               <div class="col s12">              
                 <ul class="tabs">
@@ -92,6 +81,21 @@
             </div>        
       </div>
     </div>
+  
+     <!-- footer -->
+     <div class='Foot_footer-container'>
+        <ul class="Foot_ul-left">
+          <li><a class='Foot_fa-icon' href="https://docs.google.com/document/d/1Rdn_Fjy_iVgVykVBH0CtJOY_bPfmtm2lRJ0RkaCMQks/edit?usp=sharing"><i class="far fa-file-alt fa-5x"></i><span id='Foot_resume' class="flex">Resume</span></a></li>
+          <li><a class='Foot_fa-icon modal-trigger' href="#Modal_contact-modal"><i class="far fa-envelope-open fa-5x"></i><span id='Foot_contact' class="flex">Contact</span></a></li>
+        </ul>
+  
+        <ul class="Foot_ul-right">
+          <li><a class='Foot_fa-icon' href="https://www.linkedin.com/in/trey-warrick-928547169"><i class="fab fa-linkedin fa-3x"></i></a></li>
+          <li><a class='Foot_fa-icon' href="https://github.com/iQuixotic/"><i class="fab fa-github-square fa-3x"></i></a></li>
+          <li><a class='Foot_fa-icon' href="https://dashboard.heroku.com/"><img id='Foot_img' src='./assets/imgs/heroku-logo-light.png'></a></li>
+        </ul>
+      </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- link to jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
