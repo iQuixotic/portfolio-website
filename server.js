@@ -5,24 +5,15 @@ const PORT = process.env.PORT || 4040;
 const app = express();
 const routes = require('./routes/app')
 
-// Define middleware here
+// Define middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(routes);
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+// Define API routes 
+app.use(express.static(path.join(__dirname, 'views')));
 
-// Define API routes here
-
-// document.addEventListener(onstorage) {
-//   window.location.reload(true);
-// }
-
-  app.use(express.static(path.join(__dirname, 'views')));
-// });
-
+// listen on port PORT
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
