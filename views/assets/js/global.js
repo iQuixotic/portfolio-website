@@ -47,17 +47,25 @@ const project = {
 
 // text for about me 
 const about = `<p>${indent}I am open-minded. I sincerely love silly puns and bad jokes. I love learning
- new skills. I find simple sentence structure captivating. </p>
- <p>${indent}About 1 year ago${c} I started coding in javascript. 
- In March (2018)${c} my pursuit blossomed into something bigger. I left my day job
- to pursue a coding skillset full-time at the University of Central Florida 
- and haven't slowed since.</p> `;
+ new skills. I find simple sentence structure captivating. As for my coding style${c} I NEED
+  my code to 
+ be neat and maintainable. I typically use my own take on 
+ Block-element-modifier for my CSS naming conventions. In larger projects${c}
+ I like to incorporate SMACSS as well. 
+
+ I use descriptive camel casing for my variables and LOVE spacing and comments. I'm
+ all about React and Vue.
+ If this sounds like what you're looking for${c} thats what I got. Put me in coach. </p>`
+//  <p>${indent}About 1 year ago${c} I started coding in javascript. 
+//  In March (2018)${c} my pursuit blossomed into something bigger. I left my day job
+//  to pursue a coding skillset full-time at the University of Central Florida 
+//  and haven't slowed since.</p> `;
 
 // text for skills 
-const skills = `HTML${c} CSS${c} Javascript${c} Git${c} Github${c}
-API's${c} AJAX${c} Materialize${c} Bootstrap${c} JQuery${c}
-React.js${c} Typescript${c} Node.js${c} MongoDB${c} MySQL${c}
-Sequelize${c} Mongoose${c} Heroku${c} Amazon Web Services${c} and many more...`
+const skills = `HTML${c} CSS${c} Javascript${c} ES6${c} Git${c} Github${c}
+all of the API's${c} all of the AJAX${c} Materialize${c} Bootstrap${c} JQuery${c}
+React.js${c} Vue${c} Typescript${c} Node.js${c} Express${c} MongoDB${c} MySQL${c}
+Sequelize${c} Mongoose${c} Heroku${c} Amazon Web Services (EC2)${c} and many more...`
 
 // for saying hello
 const welcome = `<h3 class='js-welcome'>Welcome to My Page !! I am Trey !! </h3>`;
