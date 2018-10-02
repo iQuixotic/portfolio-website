@@ -7,6 +7,7 @@ $(document).ready(() => {
       $('#mobile-app').append(`<div class='spacer'></div>`); 
     
         for (i = 0; i < project.carouselHref.length; i++) {
+              console.log(project.carouselHref[i])
 
             let title = document.createElement('div');
             $('#mobile-app').append(title);
