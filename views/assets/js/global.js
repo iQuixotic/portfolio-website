@@ -23,7 +23,7 @@ const project = {
     title: ['Zenith Holdings', 'Avatar Cards', 'Cat Clicker', 'Picture Puzzles', "Lil' Libs"],
     imgLoc: [`./assets/imgs/zenithScreenShot.png`, './assets/imgs/cards.png',
         './assets/imgs/catGif9.png', './assets/imgs/picturePuzzles.png', './assets/imgs/lilLibs.png'],
-    projectHref: ['https://bank-manager-app-9485.herokuapp.com/',
+    projectHref: ['https://github.com/iQuixotic/bank-app',
         'https://avatar-card-tribute-game-89458.herokuapp.com/',
         'https://iquixotic.github.io/cat-clicker-game/',
         'https://picture-puzzles.herokuapp.com/',
@@ -60,16 +60,12 @@ const project = {
 }
 
 // text for about me 
-const about = `<p>${indent}I am open-minded. I sincerely love silly puns and bad jokes. I love learning
- new skills. I find simple sentence structure captivating. As for my coding style${c} I NEED
-  my code to 
- be neat and maintainable. I typically use my own take on 
- Block-element-modifier for my CSS naming conventions. In larger projects${c}
- I like to incorporate SMACSS as well. 
-
- I use descriptive camel casing for my variables and LOVE spacing and comments. I'm
- all about React and Vue.
- If this sounds like what you're looking for${c} thats what I got. </p>`
+const about = `<p>${indent} In 2019, I started my coding career in Tampa, Florida with a Revature. For backend code, I used Java with Spring Boot and occasionally Nodejs. For front end, we used Reactjs with Redux. At my time here, I primarily contributed to a staging application. This application was used internally to keep track where various employees were located and what interviews would be scheduled with which employees.</p>
+<p>${indent} After working for Revature for about 5 months, my contract was moved to Infosys where I have worked ever since. Infosys, like Revature, is a consultancy company, that deploys resources wherever they are needed. They consult for various companies, including many fortune 500 companies AT&T and Verizon where I have spent my time as an Infosys employee.</p>
+<p>${indent} On my first project at Infosys, I used JSPs with Angularjs to build build portal pages for AT&T. During my second project (Also AT&T), I worked with a small team to migrate part of the comapany’s billing from Zuora to Salesforce. My primary responsibility during this time was working on the Orchestration server.</p>
+<p>${indent} Around the beginning of 2020, I was offered an opportunity at Infosys to move to a Verizon account in Tampa, FL.  I started out working in Nodejs and Reactjs for a vendor portal team. This team was responsible for building out a Single Sign on that connected a Verizon user across multiple internal Verizon applications.</p>
+<p>${indent} After only a couple months on this project, I was promoted to a Lead developer and moved to a new team within Verizon where I have been ever since. At my current position, my team works primarily  in Nodejs to develop applications for the benefit of network engineers. Our primary work has been build various interfaces and workflows to make it easier for a network engineer to manage multiple issues and/or upgrade needs for various 4g and 5g towers. We have also worked to automate several components of pushing new configurations to 5g towers in order to make this process quicker and easier for a network engineer to manage.</p>
+`
 
 // text for skills 
 const skills = `HTML${c} CSS${c} Javascript${c} PHP ${c} ES6${c} Git${c} Github${c}
