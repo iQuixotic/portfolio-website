@@ -74,7 +74,7 @@ React.js${c} Vue${c} Typescript${c} Node.js${c} Express${c} MongoDB${c} MySQL${c
 Sequelize${c} Mongoose${c} Heroku${c} Amazon Web Services (EC2)${c} and many more...`
 
 // for saying hello
-const welcome = `<h3 class='js-welcome'>Welcome to My Page !! I am Trey !! </h3>`;
+const welcome = `<h3 class='js-welcome'>Thanks for visiting my portfolio!</h3>`;
 
 // for display over skills
 const skillsHeading = `<h3 class='js-skills'>Skills </h3>`;
